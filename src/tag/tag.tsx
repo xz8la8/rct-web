@@ -19,7 +19,7 @@ const defaultProps = {
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>;
 
 /** 把他变成 required，不用再去判断是否有默认值 */
-export type TagProps = Props & typeof defaultProps & NativeAttrs;
+type TagProps = Props & typeof defaultProps & NativeAttrs;
 
 export type TagColors = {
   color: string;
