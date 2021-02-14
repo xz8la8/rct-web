@@ -4,7 +4,7 @@ import useTheme from '../styles/use-theme';
 import { SnippetTypes } from '../utils/prop-types';
 import { GeistUIThemesPalette } from '../styles/themes';
 
-interface Props {
+export interface Props {
   type?: SnippetTypes;
   invert?: boolean;
   className?: string;
@@ -17,6 +17,8 @@ const defaultProps = {
 };
 
 type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>;
+
+/** 把他变成 required，不用再去判断是否有默认值 */
 export type TagProps = Props & typeof defaultProps & NativeAttrs;
 
 export type TagColors = {
@@ -90,7 +92,6 @@ const Tag: React.FC<React.PropsWithChildren<TagProps>> = ({
           display: inline-block;
           line-height: 0.875rem;
           font-size: 0.875rem;
-          height: 1.75rem;
           border-radius: ${theme.layout.radius};
           border: 1px solid ${borderColor};
           background-color: ${bgColor};
@@ -105,4 +106,10 @@ const Tag: React.FC<React.PropsWithChildren<TagProps>> = ({
 
 const MemoTag = React.memo(Tag);
 
+/** 把 required 变回 Partial */
 export default withDefaults(MemoTag, defaultProps);
+
+type APIProps = Props & typeof defaultProps
+export const API : React.FC<APIProps> = () => null;
+
+API.defaultProps = defaultProps;

@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "paths": {
+      "@/*": ["src/*"],
       "rct": ["src/index.ts"]
     }
   }
