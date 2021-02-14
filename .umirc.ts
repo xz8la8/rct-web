@@ -1,8 +1,10 @@
-// more config: https://d.umijs.org/config
-import { defineConfig } from 'dumi';
+const extraBabelPlugins = [
+  ["styled-jsx/babel", { "optimizeForSpeed": true }]
+];
 
-export default defineConfig({
+export default {
   title: 'rct',
   outputPath: '.doc',
   exportStatic: {},
-});
+  extraBabelPlugins,
+};
