@@ -1,7 +1,7 @@
 {
   "name": "rct",
   "version": "0.1.0",
-  "description": "toy",
+  "description": "toy123",
   "scripts": {
     "start": "dumi dev",
     "build": "dumi build",
