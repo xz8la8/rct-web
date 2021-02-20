@@ -38,7 +38,3 @@ jobs:
           name: Run Tests
           command: yarn test:unit -- --forceExit --detectOpenHandles --runInBand --maxWorkers=2
           no_output_timeout: 300m
-
-      - run:
-          name: Generate coverage
-          command: bash <(curl -s https://codecov.io/bash)
