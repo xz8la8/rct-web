@@ -1,5 +1,7 @@
 # rct
 
+[![CircleCI](https://circleci.com/gh/xz8la8/rct-web/tree/master.svg?style=svg)](https://circleci.com/gh/xz8la8/rct-web/tree/master)
+
 develop 开发分支
 
 deploy 预览部署
