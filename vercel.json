@@ -1,7 +1,7 @@
 {
   "version": 2,
   "github": {
-    "silent": true
+    "enable": false
   },
   "name": "rct-web",
   "builds": [
