@@ -1,5 +1,5 @@
 # rct
 
-deploy 分支部署
+deploy 预览部署
 
 master 正式部署
