@@ -7,5 +7,5 @@ export default {
   outputPath: '.doc',
   exportStatic: {},
   extraBabelPlugins,
-  publicPath: process.env.NODE_ENV === 'production' ? '/rct-web/' : '/'
+  // publicPath: process.env.NODE_ENV === 'production' ? '/rct-web/' : '/'
 };
